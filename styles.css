@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+    flex: 1; /* Allows main content to grow and push the footer to the bottom */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    /* Footer at the bottom */
+    position: sticky;
+    bottom: 0;
+}
+.intro-image {
+    width: 100%; /* Makes the image cover full width of the container */
+    max-width: 1000px; /* Increase max width to make it cover more space */
+    height: auto;
+    margin: 0 auto 1em; /* Centers the image and adds space below */
+    display: block;
+}
+.intro2-image {
+    width: 150%; /* Makes the image cover full width of the container */
+    max-width: 300px; /* Increase max width to make it cover more space */
+    height: auto;
+    margin: 0 auto 1em; /* Centers the image and adds space below */
+    display: block;
+}
+
+p {
+    font-size: 1.2em; /* Increase font size; adjust as needed */
+    line-height: 1.6; /* Improves readability by increasing line spacing */
+}
+.species-toggle-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.species-toggle-bar a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.species-toggle-bar a:hover {
+    background-color: #555;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin: 8px 0;
+}
+
+section .timeline .event {
+    margin-bottom: 20px;
+}
+
+section .story {
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p, section ul {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+#success-stories a {
+    color: inherit; /* Inherit color from parent element (no blue) */
+    text-decoration: none; /* Remove underlining */
+}
+
+/* Optionally, you can style the links when hovered */
+#success-stories a:hover {
+    text-decoration: underline; /* Show underline on hover */
+}
+
+/* Additional styling for the stories */
+#success-stories .story {
+    margin-bottom: 20px;
+}
+
+#success-stories h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#success-stories h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+#success-stories p {
+    color: #555;
+    line-height: 1.6;
+}

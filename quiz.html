@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Conservation Quiz</title>
+    <link rel="stylesheet" href="quiz.css"> <!-- Link to the quiz-specific CSS file -->
+</head>
+<body>
+    <header>
+        <h1>The Lost Ones</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Welcome to the Wildlife Conservation Quiz</h1>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div id="question-progress">
+                <span id="question-number">Question 1</span> / <span id="total-questions">10</span>
+                <div id="timer">Time Left: <span id="time-left">30</span>s</div>
+            </div>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <button id="next-button" onclick="nextQuestion()" disabled>Next Question</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h1>Quiz Complete!</h1>
+            <p id="result-message"></p>
+            <div id="answers"></div>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
